@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3ebd9"
+    tools:context=".home">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        android:background="?android:attr/windowBackground"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_navi" />
+
+    <TextView
+        android:id="@+id/tvFacts"
+
+        android:layout_width="354dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="29dp"
+        android:padding="5dp"
+        android:background="@drawable/tv_rounded_corner_"
+        android:gravity="center_vertical"
+        android:text='"FACTS OF THE DAY"'
+        android:lineSpacingExtra="3sp"
+        android:textAlignment="center"
+        android:textColor="#BC000000"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="254dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/tvFacts"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="81dp"
+
+        android:backgroundTint="#c0d3d9 "
+        android:text="S T A R T"
+        android:textColor="@color/black"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="36sp" />
+
+
+    <Button
+        android:id="@+id/btnRules"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:text="HOW TO PLAY"
+        android:backgroundTint="#c0d3d9 "
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

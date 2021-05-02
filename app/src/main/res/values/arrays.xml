@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="meme_images">
+        <item>@drawable/meme_0</item>
+        <item>@drawable/meme_1</item>
+        <item>@drawable/meme_2</item>
+        <item>@drawable/meme_3</item>
+        <item>@drawable/meme_4</item>
+        <item>@drawable/meme_5</item>
+        <item>@drawable/meme_6</item>
+        <item>@drawable/meme_7</item>
+        <item>@drawable/meme_8</item>
+        <item>@drawable/meme_9</item>
+        <item>@drawable/meme_10</item>
+        <item>@drawable/meme_11</item>
+        <item>@drawable/meme_12</item>
+        <item>@drawable/meme_13</item>
+        <item>@drawable/meme_14</item>
+        <item>@drawable/meme_15</item>
+        <item>@drawable/meme_16</item>
+        <item>@drawable/meme_17</item>
+        <item>@drawable/meme_18</item>
+        <item>@drawable/meme_19</item>
+        <item>@drawable/meme_20</item>
+        <item>@drawable/meme_21</item>
+        <item>@drawable/meme_22</item>
+        <item>@drawable/meme_23</item>
+        <item>@drawable/meme_24</item>
+        <item>@drawable/meme_25</item>
+        <item>@drawable/meme_26</item>
+        <item>@drawable/meme_27</item>
+        <item>@drawable/meme_28</item>
+        <item>@drawable/meme_29</item>
+
+    </array>
+</resources>

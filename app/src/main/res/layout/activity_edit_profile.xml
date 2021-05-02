@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProfile">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/ivEditProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.50"
+            android:src="@drawable/ic_baseline_face_24" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+
+        android:id="@+id/tvName"
+        android:layout_width="127dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:text="NAME |"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etEditName"
+        android:layout_width="264dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="27dp"
+        android:layout_toRightOf="@+id/tvName" />
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="UPDATE"
+        android:backgroundTint="#c0d3d9 "
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnChgePw"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdateProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="CHANGE PASSWORD"
+        android:backgroundTint="#c0d3d9 "
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

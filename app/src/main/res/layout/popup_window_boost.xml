@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3ebd9"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvPickBooster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Pick A Booster"
+        android:fontFamily="@font/arlrdbd"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBoost_1"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tvPickBooster"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="0dp"
+            android:orientation="vertical" >
+
+            <!-- Need put in source first -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_more_time_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extend 5 seconds"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvRemainingBoost_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="Remaining: "
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnUseBoost_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="use"
+                android:backgroundTint="#c0d3d9 "
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBoost_2"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tvPickBooster"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="215dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="0dp"
+            android:orientation="vertical" >
+
+            <!-- Need put in source first -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_more_time_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extend 10 seconds"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvRemainingBoost_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="Remaining: "
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnUseBoost_2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text="use"
+                android:backgroundTint="#c0d3d9 "
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBoost_3"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/cvBoost_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="0dp"
+            android:orientation="vertical" >
+
+            <!-- Need put in source first -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_more_time_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extend 15 seconds"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvRemainingBoost_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="Remaining: "
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnUseBoost_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="use"
+                android:backgroundTint="#c0d3d9 "
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBoost_4"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/cvBoost_2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="215dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="0dp"
+            android:orientation="vertical" >
+
+            <!-- Need put in source first -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_assignment_turned_in_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hint"
+                android:layout_marginStart="30dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvRemainingBoost_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Remaining: "
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnUseBoost_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="use"
+                android:backgroundTint="#c0d3d9 "
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCancelBoost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cvBoost_4"
+        android:layout_marginTop="60dp"
+        android:text="CANCEL"
+        android:backgroundTint="#c0d3d9 "
+        android:textColor="@color/black"/>
+
+
+
+</RelativeLayout>

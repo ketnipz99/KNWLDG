@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.knwldg">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:debuggable="false"
+        android:theme="@style/Theme.KNWLDG">
+        <activity android:name=".termsPrivacyPolicy"></activity>
+        <activity android:name=".helpFeedback" />
+        <activity android:name=".gameSummary" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gameActivity" />
+        <activity android:name=".gameTutorial" />
+        <activity android:name=".gameCategory" />
+        <activity android:name=".changePassword" />
+        <activity android:name=".editProfile" />
+        <activity android:name=".achievement" />
+        <activity android:name=".eShop" />
+        <activity android:name=".settings" />
+        <activity android:name=".home" />
+        <activity android:name=".forgotPw" />
+        <activity android:name=".signUp" />
+        <activity android:name=".logIn" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

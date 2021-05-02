@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3ebd9"
+    tools:context=".gameCategory">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="00:30"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/slashQues"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        android:text="/"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvCurrentQues"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="-105dp"
+        android:layout_toLeftOf="@+id/slashQues"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvTotalQues"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@+id/slashQues"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/ivCoinsQues"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_ecoin_24" />
+
+    <TextView
+        android:id="@+id/tvCoinsQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:text="200"
+        android:textColor="@android:color/black"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/tvQues"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/slashQues"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textColor="#C8000000"
+        android:textSize="24dp" />
+
+    <CheckBox
+        android:id="@+id/cbOptA"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvQues"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/radio_button_background"
+        android:button="@android:color/transparent"
+        android:text="OPTION_A"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/cbOptB"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvQues"
+        android:layout_marginStart="238dp"
+        android:background="@drawable/radio_button_background"
+        android:button="@android:color/transparent"
+        android:text="OPTION_B"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/cbOptC"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cbOptA"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/radio_button_background"
+        android:button="@android:color/transparent"
+        android:text="OPTION_C"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/cbOptD"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cbOptB"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/radio_button_background"
+        android:button="@android:color/transparent"
+        android:text="OPTION_D"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnFinishQuiz"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#197419"
+        android:text="Confirm"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnUseBoost"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="35dp"
+        android:text="boost"
+        android:backgroundTint="#1797c1 "
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#BD1D1D"
+        android:text="EXIT" />
+
+</RelativeLayout>

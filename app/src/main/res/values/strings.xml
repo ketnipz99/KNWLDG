@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">KNWLDG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_us">What is KNWLDG?</string>
+    <string name="about_us_description">KNWLDG is an educational application that spread general knowledge about Malaysia thought playing interaction game</string>
+    <string name="vision">What is KNWLDG\&apos; Vision?</string>
+    <string name="vision_desc">The vision of our company is to make future learning more interesting and diverse</string>
+    <string name="objective">What is KNWLDG\&apos; objective?</string>
+    <string name="objective_desc">The objective of our company is to develop a general knowledge e-learning mobile application that are suitable for every age group, especially ranging from kindergarten kids to teenagers</string>
+
+    <string-array name="malaysia_facts">
+        <item>Malaysia lies close to the equator and thus has an equatorial climate with two rainy seasons. The humidity is very high.</item>
+        <item>Singapore is linked to Johor Bahru/Malaysia by a 26 km/ 16 miles long bridge.</item>
+        <item>Malaysia\&apos;s highest point is Mount Kinabalu, which is on the island of Borneo. Mount Kinabalu is 4,095 m/ 13,435 ft high.</item>
+        <item>The longest river is the Rajang river with 563 km/ 350 ft.</item>
+        <item>Malaysia has 13 states, the biggest state called Sarawak and the smallest is Perlis. </item>
+        <item>Malaysia has hundreds of islands along the coastline. Pulau Langkawi is the biggest island of the country. </item>
+        <item>Malaysia is slightly larger in area than the state of New Mexico/USA or slightly larger than Norway.</item>
+        <item>East Malaysia is on the island of Borneo and consists of two states: Sabah and Sarawak.</item>
+        <item>Peninsular Malaysia is linked to Singapore by a causeway and a bridge.</item>
+        <item>Singapore, China, the USA and Japan are Malaysia\&apos;s main export and import partners.</item>
+        <item>The population in rural East Malaysia lives in typical long houses.</item>
+        <item>Malaysia is among the seventeen megadiverse countries. This means there is extremely high biodiversity in Malaysia.</item>
+        <item>The island of Borneo is not only the largest island in Asia, but the third largest island in the world!</item>
+        <item>The Sultanate of Kedah on the Malay Peninsula is one of the oldest in the world, established in A.D. 1136.</item>
+        <item>Some buildings in Malaysia do not have a fourth floor. They are replaced by \&apos;3A\&apos; as the sound of four (sì) is similar to the sound of death in Chinese (sĭ).</item>
+        <item>In Malaysia, a heart bypass surgery can be done for approximately US$9,000. The same operation costs around $130,000 in the U.S.</item>
+        <item>According to the World Tourism Organization (WTO), Malaysia has developed into the ninth most visited country in the world, with 23.6 million visitors in 2009.</item>
+        <item>Orangutan is humans\&apos; closest relative and Asia’s only great ape. Orangutans can be found only in the wild in Borneo and Sumatra.</item>
+        <item>Seventeen-year-old Kok Shoo Yin became the first Malaysia citizen certificate holder when he received his official documentation on November 14, 1957.</item>
+        <item>Found in 1991, Perak Man is the oldest (about 11,000 years old) and the only complete human skeleton to be found in Peninsular Malaysia.</item>
+    </string-array>
+
+    <string name="terms">
+       By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.\n
+
+        \nContent\n
+        Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material (\&apos;Content\&apos;). You are responsible for the …\n
+
+        \nChanges\n
+        We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 (change this) days\&apos; notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.\n
+
+        \nContact Us\n
+        If you have any questions about these Terms, please contact us.\n
+    </string>
+
+    <string name="rules">
+        1. KNWLDG is a multiple choice question game.\n\n
+        2. You are required to read and study the tutorial before starting the game.\n\n
+        3. Choose only one answer and click "CONFIRM" button to submit your answer.\n\n
+        4. You have 15 seconds to answer each question.\n\n
+        5. Purchased boost can be activated in the game.\n\n
+        6. Each correct answer will be rewarded with 20 eCoins.\n\n
+        7. Wrong answer will be rewarded with nothing.\n\n
+        8. You need to score more than or equal to 50% (100 eCoins) to pass and collect the reward.\n\n
+    </string>
+
+</resources>

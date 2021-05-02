@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0D3D9"
+    tools:context=".gameCategory">
+
+    <TextView
+        android:id="@+id/choose_text"
+        android:layout_width="385dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="CHOOSE A CATEGORY"
+        android:fontFamily="@font/arlrdbd"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="457dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/random_shuffle"
+                android:layout_width="350dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#d5e4e6"
+                android:text="RANDOM SHUFFLE"
+                android:fontFamily="@font/arlrdbd"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/choice_1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="130dp"
+                android:backgroundTint="#fee3b2"
+                android:text="TRADITION"
+                android:fontFamily="@font/arlrdbd"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/choice_2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="234dp"
+                android:layout_marginTop="130dp"
+                android:backgroundTint="#ffd686"
+                android:text="HISTORY"
+                android:fontFamily="@font/arlrdbd"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/choice_3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="303dp"
+                android:backgroundTint="#f3ebd9"
+                android:fontFamily="@font/arlrdbd"
+                android:text="FESTIVALS"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/choice_4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="238dp"
+                android:layout_marginTop="300dp"
+                android:backgroundTint="#fcb445"
+                android:text="FOOD"
+                android:fontFamily="@font/arlrdbd"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/choice_5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="470dp"
+                android:backgroundTint="#ffd686"
+                android:text="PLACES"
+                android:fontFamily="@font/arlrdbd"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/choice_6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="238dp"
+                android:layout_marginTop="470dp"
+                android:backgroundTint="#f3ebd9"
+                android:text="NATURE"
+                android:fontFamily="@font/arlrdbd"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F8FF"
+    tools:context=".eShop">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivCoin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="20dp"
+            android:background="#F6F6F6"
+            android:src="@drawable/ic_baseline_ecoin_24" />
+
+        <TextView
+            android:id="@+id/tvCoins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="200"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90sp"
+                android:layout_marginBottom="30sp"
+                android:text="eShop"
+                android:textAlignment="center"
+                android:fontFamily="@font/arlrdbd"
+                android:textSize="36sp"
+                android:textColor="@android:color/black" />
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:columnCount="2"
+                android:columnOrderPreserved="true"
+                android:layout_weight="8"
+                android:padding="14dp"
+                >
+
+                <!-- still need to put id to each cardview -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_baseline_more_time_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extend 5 seconds"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="60 eCoins"
+                            android:layout_marginStart="35dp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnBoost_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:backgroundTint="#fee3b2"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="25dp"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_more_time_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extend 10 seconds"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100 eCoins"
+                            android:layout_marginStart="40dp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnBoost_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:backgroundTint="#ffd686"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="35dp"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_more_time_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extend 15 seconds"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="150 eCoins"
+                            android:layout_marginStart="35dp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnBoost_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:backgroundTint="#ffd686"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_assignment_turned_in_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 in-game hint"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:layout_marginStart="10dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100 eCoins"
+                            android:layout_marginStart="30dp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnBoost_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:backgroundTint="#fee3b2"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="20dp"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_assignment_turned_in_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5 in-game hints"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="490 eCoins"
+                            android:layout_marginStart="30dp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnBoost_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:backgroundTint="#fee3b2"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="20dp"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_assignment_turned_in_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 in-game hints"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="900 eCoins"
+                            android:layout_marginStart="35dp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnBoost_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:backgroundTint="#ffd686"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="30dp"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_rewards_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMING SOON"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <Button
+                            android:id="@+id/btnBoost_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:textAlignment="center"
+                            android:layout_marginStart="20dp"
+                            android:enabled="false"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_rewards_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMING SOON"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <Button
+                            android:id="@+id/btnBoost_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="buy"
+                            android:textAlignment="center"
+                            android:layout_marginStart="20dp"
+                            android:enabled="false"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_rewards_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMING SOON"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <Button
+                            android:id="@+id/btnBoost_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="20dp"
+                            android:text="buy"
+                            android:textAlignment="center"
+                            android:enabled="false"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical" >
+
+                        <!-- Need put in source first -->
+                        <ImageView
+                            android:src="@drawable/ic_baseline_rewards_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMING SOON"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <Button
+                            android:id="@+id/btnBoost_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="20dp"
+                            android:text="buy"
+                            android:textAlignment="center"
+                            android:enabled="false"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_navi" />
+
+</RelativeLayout>
